@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color:green;
+}
+
+.card:hover {
+  background-color:Tomato;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>GAS-MartExpress</h1>
+  <h3><span style="background-color:green">All are professional here  please talk to manners.</span></h3>
+  
+</div>
+
+<h2 style="text-align:center"><span style="background-color:yellow">Our Team</span></h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="rs (2).jpg" alt="Jane" style="width:50%" height="20%" >
+      <div class="container">
+        <h2>Abhishek Ranjan </h2>
+        <p class="title"><b>CEO & Founder<b></p>
+        <p><b>Computer Science & Engineering(MCE, Motihari)</b></p>
+        <p><b>abhishekeng12345@gmail.com</b></p>
+        <p><button class="button"><b>Contact</b></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="GAM.jpeg" alt="Mike" style="width:40%" height="15%">
+      <div class="container">
+        <h2>Gulshan Kumar </h2>
+        <p class="title"><b>Art Director</b></p>
+        <p><b>Computer Science & Engineering(MCE, Motihari)</b></p>
+        <p><b>6202393535</b></p>
+        <p><button class="button"><b>Contact</b></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="IMG-20200223-WA0010 (2).jpg" alt="John" style="width:50%" height="20%">
+      <div class="container">
+        <h2>Sujeet Kumar </h2>
+        <p class="title"><b>Designer</p>
+        <p>Computer Science & Engineering(MCE, Motihari)</p>
+        <p>9117536490</p>
+        <p><button class="button">Contact</b></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
